@@ -15,12 +15,12 @@ class Customer(Person):
         Person.__init__(self, name, address, phone_number)
 
         self.__customer_number = customer_number
-        self.__Boolean_data_attribute = B_data
+        self.__B_data = B_data
 
     def print_person(self):
-        Person.print_person(self):
-        print('Customer Number:', self.__cust_number)
-        if self.__on_list:
-            print('On mail Yes')
+        Person.print_person(self)
+        print('Customer Number:', self.__customer_number)
+        if self.__B_data:
+            print('On mailing list: Yes.')
         else:
-            print('NO.')
+            print('On mailing list: NO.')
